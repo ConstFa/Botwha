@@ -1,0 +1,70 @@
+let PhoneNumber = require('awesome-phonenumber')
+let levelling = require('../lib/levelling')
+
+let handler = async (m, { conn, usedPrefix }) => {
+
+  let pp = './Menu2.jpg'
+  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+  try {
+//    pp = await conn.getProfilePicture(who)
+  } catch (e) {
+
+  } finally {
+    let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
+    let { name, limit, exp, banned, lastclaim, registered, regTime, age, level } = global.DATABASE.data.users[m.sender]
+    let { min, xp, max } = levelling.xpRange(level, global.multiplier)
+    let username = conn.getName(who)
+    let str = `
+*_ミHola ${username} 彡_*
+
+*<MENU  AUDIO*
+
+° ඬ⃟ _Noche de paz_
+° ඬ⃟ _Buenos dias_
+° ඬ⃟_Audio hentai_
+° ඬ⃟_Fiesta del admin_
+° ඬ⃟_Fiesta del admin 2_
+° ඬ⃟_Viernes_
+° ඬ⃟ _Chica lgante_
+° ඬ⃟_Baneado_
+° ඬ⃟_A nadie le importa_
+° ඬ⃟_Sexo_
+° ඬ⃟_Vete a la vrg_
+° ඬ⃟_Hola_
+° ඬ⃟_Te amo_
+° ඬ⃟_Yamete_
+° ඬ⃟_Te diagnostico con gay_
+° ඬ⃟_Quien es tu sempai botsito 7w7_
+° ඬ⃟_Bañate_
+° ඬ⃟_Vivan los novios_
+° ඬ⃟_Marica quien_
+° ඬ⃟ _Es puto_
+° ඬ⃟_Onichan_
+° ඬ⃟_Feliz cumpleaños_
+° ඬ⃟_Atencion grupo_
+° ඬ⃟ _Oh me vengo_
+° ඬ⃟_Murio el grupo_
+° ඬ⃟_Siuuu_
+° ඬ⃟ _:c_
+° ඬ⃟_a_
+
+*𝗞𝗿𝗶𝘇 𝗘𝗱𝗶𝘁𝘀*`.trim()
+    let mentionedJid = [who]
+    conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
+  }
+}
+handler.help = ['menu2']
+handler.tags = ['General']
+handler.command = /^(menu2|audios|menú2|memu2)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
+
+module.exports = handler
