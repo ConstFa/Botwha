@@ -43,8 +43,8 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'listo'
-global.author = 'Bot 🦈'
+global.packname = 'Kri Edits'
+global.author = 'Bot Tiburo V2 ?'
 
 
 //global.wait = '*Esperé un momento..*'
