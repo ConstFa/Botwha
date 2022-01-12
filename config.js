@@ -1,9 +1,9 @@
 global.DeveloperMode = 'false' //true Or false
-global.linkGC = ['https://chat.whatsapp.com/E9VqaOpOrfyL0BvWR3Fql2']
+global.linkGC = ['https://chat.whatsapp.com/GKwLnkgSB2VKC8frMVA423']
 global.channelYT = [] 
 global.owner = ['16476954879' , '16476954879' , '16476954879']// Cambia los numeros por tu o tus numeros
 global.mods = ['16476954879'] // Cambia el numero y escribe el numero que sera del Bot
-global.prems = ['51978048374'] // Cambia el numero y escribe el de un usuario premium VIP
+global.prems = ['51978048374' , '447451217182'] // Cambia el numero y escribe el de un usuario premium VIP
 
 //Nota para ti xD: Puedes contactarme si necesitas ayuda con algo al +529996125657
 

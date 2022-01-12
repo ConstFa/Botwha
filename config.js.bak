@@ -1,9 +1,9 @@
 global.DeveloperMode = 'false' //true Or false
-global.linkGC = ['https://chat.whatsapp.com/G6Luvtt0lQu8ZLxvAnvmtw']
+global.linkGC = ['https://chat.whatsapp.com/GKwLnkgSB2VKC8frMVA423']
 global.channelYT = [] 
-global.owner = ['994408103470' , '994408103470' , '994408103470']// Cambia los numeros por tu o tus numeros
-global.mods = ['994405470940'] // Cambia el numero y escribe el numero que sera del Bot
-global.prems = ['56953361101'] // Cambia el numero y escribe el de un usuario premium VIP
+global.owner = ['16476954879' , '16476954879' , '16476954879']// Cambia los numeros por tu o tus numeros
+global.mods = ['16476954879'] // Cambia el numero y escribe el numero que sera del Bot
+global.prems = ['51978048374'] // Cambia el numero y escribe el de un usuario premium VIP
 
 //Nota para ti xD: Puedes contactarme si necesitas ayuda con algo al +529996125657
 
@@ -43,7 +43,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'Kri Edits'
+global.packname = 'Iker Edits'
 global.author = 'Bot Tiburo V2 ?'
 
 
