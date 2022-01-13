@@ -19,7 +19,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let username = conn.getName(who)
     let str = `
 *_➤ Creador : *Kriz Edits*
-*_➤ Numero del creador:_* *wa.me/994408103470* 
+*_➤ Numero del creador:_* *wa.me/16476954879* 
 
 *<TOP/>*
 ° _${usedPrefix}top10gays_
