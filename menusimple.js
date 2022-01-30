@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let str = `
 * Hola ${username} �?*
 
-*_�? Creador :𝗞𝗿𝗶𝘇 𝗘𝗱𝗶𝘁𝘀
+*_�? Creador :Iker Edits
 
 *<MENU SIMPLE/>*
 
@@ -225,7 +225,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ° ඬ⃟_${usedPrefix}lolice *me / @tag*_
 ° ඬ⃟_${usedPrefix}simpcard *me / @tag*_
 
-*_𝗞𝗿𝗶𝘇 𝗘𝗱𝗶𝘁𝘀_*`.trim()
+*_Iker Edits_*`.trim()
     let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
   }
